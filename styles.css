@@ -268,6 +268,7 @@ form {
 
 .formControl {
 	margin-bottom: 10px;
+	margin-top: 20px;
 	padding-bottom: 20px;
 	position: relative;
 	width: max-content;
@@ -292,15 +293,19 @@ input:focus {
 }
 
 .error input {
-	border: ridge var(--error-color) 5px;
+	border: ridge var(--error-color) 4px;
+}
+
+.error small {
+	visibility: visible;
 }
 
 small {
-	font-size: 1.2rem;
+	font-size: 0.7rem;
 	color: var(--error-color);
 	position: absolute;
 	bottom: 0;
-	left: 0;
+	left: 5px;
 	visibility: hidden;
 }
 
@@ -313,4 +318,5 @@ button {
 	width: 200px;
 	font-size: 1.5rem;
 	color: rgb(44, 44, 44);
+	cursor: pointer;
 }
